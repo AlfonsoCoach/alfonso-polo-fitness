@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alfonso Polo — Coaching Online Profesional</title>
+  <meta name="description" content="Coaching online profesional para desarrollo personal y profesional. Sesiones individuales, programas y acompañamiento. Reserva ahora." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Alfonso Polo — Coaching Online Profesional" />
+  <meta property="og:description" content="Coaching online profesional para desarrollo personal y profesional. Reserva una sesión." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tusitioweb.com/" />
+  <meta property="og:image" content="https://tusitioweb.com/tu-foto.jpg" />
+
+  <!-- Styles: limpio, responsive -->
+  <style>
+    :root{
+      --accent:#2b6cb0;
+      --muted:#6b7280;
+      --bg:#f7fafc;
+      --card:#ffffff;
+      --maxw:1100px;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#111;}
+    .container{max-width:var(--maxw);margin:0 auto;padding:28px;}
+    header{display:flex;justify-content:space-between;align-items:center;padding:12px 0;}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand img{width:56px;height:56px;border-radius:8px;object-fit:cover}
+    nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:center;margin-top:24px}
+    .hero h1{font-size:28px;margin:0 0 12px}
+    .hero p{margin:0 0 18px;color:var(--muted)}
+    .cta{display:flex;gap:12px}
+    .btn{background:var(--accent);color:#fff;padding:12px 16px;border-radius:8px;text-decoration:none;font-weight:700}
+    .btn.outline{background:transparent;color:var(--accent);border:2px solid var(--accent)}
+    .card{background:var(--card);border-radius:12px;padding:20px;box-shadow:0 6px 18px rgba(17,17,17,0.06)}
+    .about{display:grid;grid-template-columns:180px 1fr;gap:18px;align-items:center}
+    .about img{width:160px;height:160px;border-radius:12px;object-fit:cover}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:18px}
+    .service{padding:16px;border-radius:10px;border:1px solid #eef2f7;background:#fff}
+    .testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+    footer{margin-top:36px;padding:22px 0;color:var(--muted);font-size:14px;border-top:1px solid #e6eef8}
+    label{display:block;margin-bottom:6px;font-weight:600}
+    input[type="text"], input[type="email"], textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #dbe7f5}
+    textarea{min-height:120px;resize:vertical}
+    .meta{color:var(--muted);font-size:13px}
+    /* responsive */
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr; text-align:center}
+      .about{grid-template-columns:1fr; text-align:center}
+      nav{display:none}
+      header{flex-direction:column;align-items:flex-start;gap:10px}
+    }
+    /* Simple star display */
+    .stars{display:inline-block;vertical-align:middle}
+    .stars svg{width:18px;height:18px;fill:gold;margin-right:2px}
+  </style>
+
+  <!-- JSON-LD: LocalBusiness + AggregateRating (actualiza URL y valores) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Alfonso Polo - Coaching Online",
+    "url": "https://alfonsopolofitness.com/",
+    "logo": "https://tusitioweb.com/logo.png",
+    "image": "https://tusitioweb.com/tu-foto.jpg",
+    "description": "Coach online especializado en desarrollo personal y profesional. Sesiones individuales y programas a medida.",
+    "areaServed": "ES",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "email": "alfonsopolofitness",
+      "url": "https://tusitioweb.com/contacto"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "12"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <img src="https://tusitioweb.com/tu-foto.jpg" alt="Foto profesional" />
+        <div>
+          <div style="font-weight:800">Tu Nombre</div>
+          <div class="meta">Coach Online • Desarrollo personal y profesional</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#sobre">Sobre mí</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <h1>Coaching online para lograr tus objetivos con claridad y acción</h1>
+        <p>Ayudo a profesionales y emprendedores a diseñar metas claras, gestionar bloqueos y convertir intención en resultados medibles. Sesiones 1:1, programas de 8 semanas y acompañamiento estratégico.</p>
+
+        <div class="cta">
+          <a class="btn" href="https://calendly.com/tu-usuario" target="_blank" rel="noopener">Reservar sesión</a>
+          <a class="btn outline" href="#contacto">Contactar</a>
+        </div>
+
+        <div style="margin-top:16px;">
+          <!-- Visual de estrellas: se puede actualizar dinámicamente -->
+          <span class="stars" aria-hidden="true">
+            <!-- 5 estrellas de ejemplo -->
+            <svg viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431L23.4 9.75l-5.7 5.56L19.335 24 12 19.897 4.665 24l1.635-8.69L.6 9.75l7.732-1.732L12 .587z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431L23.4 9.75l-5.7 5.56L19.335 24 12 19.897 4.665 24l1.635-8.69L.6 9.75l7.732-1.732L12 .587z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431L23.4 9.75l-5.7 5.56L19.335 24 12 19.897 4.665 24l1.635-8.69L.6 9.75l7.732-1.732L12 .587z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431L23.4 9.75l-5.7 5.56L19.335 24 12 19.897 4.665 24l1.635-8.69L.6 9.75l7.732-1.732L12 .587z"/></svg>
+            <svg viewBox="0 0 24 24" style="opacity:0.9"><path d="M12 .587l3.668 7.431L23.4 9.75l-5.7 5.56L19.335 24 12 19.897 4.665 24l1.635-8.69L.6 9.75l7.732-1.732L12 .587z"/></svg>
+          </span>
+          <span class="meta" style="margin-left:10px">4.8 (12 reseñas)</span>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3 style="margin-top:0">Sesión de diagnóstico gratuita</h3>
+          <p class="meta">20 minutos para definir tu objetivo y ver encaje</p>
+          <a class="btn" href="https://calendly.com/tu-usuario/diagnostico" target="_blank" rel="noopener">Reservar diagnóstico</a>
+
+          <hr style="margin:14px 0;border:none;border-top:1px solid #eef7ff">
+
+          <div>
+            <strong>Opiniones</strong>
+            <div class="meta" style="margin-top:6px">La mejor forma de valorar mi trabajo es leer reseñas reales en Google.</div>
+            <!-- BOTÓN A FICHA DE GOOGLE -->
+            <div style="margin-top:10px;">
+              <!-- Reemplaza href por el enlace de tu ficha de Google Business Profile -->
+              <a class="btn outline" href="https://g.page/REEMPLAZAR_POR_TU_FICHA/review" target="_blank" rel="noopener">Dejar reseña en Google</a>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre" style="margin-top:28px">
+      <div class="card about">
+        <img src="https://tusitioweb.com/tu-foto.jpg" alt="Tu foto profesional" />
+        <div>
+          <h2 style="margin-top:0">Sobre mí</h2>
+          <p class="meta">Coach certificado • Mentor • Facilitador de cambios sostenibles</p>
+          <p>Tengo más de X años de experiencia acompañando a profesionales en transición, gestión de liderazgo y productividad. Mis titulaciones: <strong>ICF ACC</strong> (ejemplo), curso avanzado PNL, Máster en Coaching Ejecutivo (reemplaza por tus titulaciones reales).</p>
+
+          <h4>Metodología</h4>
+          <p class="meta">Trabajo con un enfoque práctico y estructurado: evaluación inicial, plan de acción con indicadores, sesiones semanales y tareas con seguimiento.</p>
+
+          <div style="margin-top:8px">
+            <a class="btn" href="#servicios">Ver servicios</a>
+            <a class="btn outline" href="#contacto" style="margin-left:8px">Contactar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" style="margin-top:22px">
+      <h3>Servicios</h3>
+      <div class="services">
+        <div class="service">
+          <h4>Coaching 1:1 - Programa 8 semanas</h4>
+          <p class="meta">Sesiones semanales, plan de acción y soporte por mensaje.</p>
+        </div>
+        <div class="service">
+          <h4>Coaching de liderazgo</h4>
+          <p class="meta">Para mandos intermedios y directivos que quieren mejorar impacto y comunicación.</p>
+        </div>
+        <div class="service">
+          <h4>Sesiones sueltas (60 min)</h4>
+          <p class="meta">Sesión puntual para enfoque y toma de decisiones.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section id="testimonios" style="margin-top:22px">
+      <h3>Testimonios</h3>
+      <div class="testimonials">
+        <div class="card">
+          <strong>María P.</strong>
+          <div class="meta">Directora de operaciones</div>
+          <p>"Las sesiones me dieron claridad y pasos concretos. Recomiendo 100%."</p>
+          <div class="meta">⭐ ⭐ ⭐ ⭐ ⭐</div>
+        </div>
+        <div class="card">
+          <strong>Carlos R.</strong>
+          <div class="meta">Emprendedor</div>
+          <p>"Cambios tangibles en productividad y prioridades."</p>
+          <div class="meta">⭐ ⭐ ⭐ ⭐ ⭐</div>
+        </div>
+        <!-- Agrega más testimonios o extrae dinámicamente -->
+      </div>
+    </section>
+
+    <!-- CTA BLOG / LEAD MAGNET -->
+    <section style="margin-top:22px">
+      <div class="card" style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+        <div>
+          <h4 style="margin:0">¿Quieres recursos gratuitos?</h4>
+          <p class="meta" style="margin:6px 0 0">Descarga mi guía rápida: "3 pasos para priorizar tu energía" (PDF)</p>
+        </div>
+        <div>
+          <a class="btn" href="/lead-magnet.pdf" target="_blank" rel="noopener">Descargar guía</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" style="margin-top:22px">
+      <h3>Contacto</h3>
+      <div class="card" style="display:grid;grid-template-columns:1fr 340px;gap:18px">
+        <div>
+          <!-- FORMULARIO: ejemplo con Formspree -->
+          <!-- Alternativa: reemplazar action con el endpoint de tu servidor o usar mailto -->
+          <form id="contactForm" action="https://formspree.io/f/REEMPLAZAR" method="POST">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email" style="margin-top:10px">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message" style="margin-top:10px">Mensaje</label>
+            <textarea id="message" name="message" required placeholder="Cuéntame brevemente tu objetivo"></textarea>
+
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <button type="submit" class="btn">Enviar</button>
+              <a class="btn outline" href="mailto:hola@tusitioweb.com">Enviar por email</a>
+            </div>
+          </form>
+        </div>
+
+        <aside>
+          <div class="meta">¿Prefieres reservar directamente?</div>
+          <a class="btn" href="https://calendly.com/tu-usuario" target="_blank" rel="noopener">Reservar sesión</a>
+
+          <hr style="margin:10px 0;border:none;border-top:1px solid #eef7ff">
+
+          <div>
+            <strong>Ficha de Google</strong>
+            <p class="meta">Para que tus clientes puedan valorar y dejar estrellas en Google, añade el enlace directo a tu ficha aquí:</p>
+            <a class="btn outline" href="https://g.page/REEMPLAZAR_POR_TU_FICHA/review" target="_blank" rel="noopener">Dejar reseña en Google</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px">
+        <div>© <strong>Tu Nombre</strong> — Coach Online</div>
+        <div class="meta">Diseño y SEO básico • <a href="#contacto">hola@tusitioweb.com</a></div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts: validación básica de formulario y actualización de estrellas si quieres actualizar dinámicamente -->
+  <script>
+    // Form: mostrar mensaje simple al enviar (puedes mejorar con tu backend)
+    document.getElementById('contactForm')?.addEventListener('submit', function(e){
+      // si usas Formspree, no evites el envío; solo mostrar feedback
+      // si prefieres AJAX, implementa fetch() al endpoint de tu servidor
+      setTimeout(()=>{ alert('Gracias — tu mensaje ha sido enviado. Te responderé en breve.'); }, 200);
+    });
+
+    // Función para actualizar visual de estrellas (opcional)
+    function renderStars(containerSelector, rating){
+      const container = document.querySelector(containerSelector);
+      if(!container) return;
+      const full = Math.round(rating);
+      let html = '';
+      for(let i=1;i<=5;i++){
+        html += i<=full ? '★' : '☆';
+      }
+      container.textContent = html + ' ' + rating.toFixed(1);
+    }
+    // Ejemplo: renderStars('.rating-display',4.8);
+  </script>
+</body>
+</html>
