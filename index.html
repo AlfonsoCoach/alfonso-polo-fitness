@@ -16,6 +16,31 @@
 
   <!-- Styles: limpio, responsive -->
   <style>
+    /* Botón principal con dos líneas */
+.btn-multi {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 22px;
+  line-height: 1.1;
+}
+
+/* Texto principal */
+.btn-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Texto secundario gris */
+.btn-subtitle {
+  font-size: 12px;
+  font-weight: 500;
+  color: #e5e7eb;
+  margin-top: 2px;
+}
+
     :root{
       --accent:#2b6cb0;
       --muted:#6b7280;
@@ -122,27 +147,6 @@
 
   <a class="btn outline" href="#contacto">Hacer Cuestionario</a>
 </div>
-        
-.btn-multi {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 14px 22px;
-  text-align: center;
-}
-
-.btn-title {
-  font-size: 16px;
-  font-weight: 700;
-  color: #fff;
-}
-
-.btn-subtitle {
-  font-size: 12px;
-  font-weight: 500;
-  color: #e5e7eb; /* gris */
-}
-
 
         <div style="margin-top:16px;">
           <!-- Visual de estrellas: se puede actualizar dinámicamente -->
@@ -352,6 +356,7 @@ Seguimiento semanal.
   </script>
 </body>
 </html>
+
 
 
 
