@@ -119,7 +119,48 @@
 .btn-plan {
   margin-top: auto;
 }
+ @media (max-width: 768px) {
 
+  /* TESTIMONIOS */
+  .testimonials {
+    grid-template-columns: 1fr;
+    padding: 0 16px;
+  }
+
+  /* TARJETAS */
+  .service,
+  .testimonial,
+  .card {
+    padding: 20px;
+  }
+
+  /* BOTONES */
+  .btn-primary,
+  button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* DESCARGAR GUÍA */
+  .download-box button,
+  .download-box .btn-primary {
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  /* CONTACTO */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* FORMULARIOS */
+  input,
+  textarea {
+    width: 100%;
+  }
+
+ }
   </style>
 
   <!-- JSON-LD: LocalBusiness + AggregateRating (actualiza URL y valores) -->
@@ -443,6 +484,7 @@ Incluye:
   </script>
 </body>
 </html>
+
 
 
 
